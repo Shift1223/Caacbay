@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, hotpink, indigo); 
+}
+.bounce {
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+.fade {
+  opacity: 0;
+  animation: fadeIn 5s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+
+header {
+  background-color: #2b2d42;
+  color: lime ;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: pink;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: lime;
+}
+
+section {
+  padding: 30px;
+  background-color: pink;
+  margin: 20px;
+  border-radius: 10px;
+}
+.color-change {
+  animation: colorPulse 2s infinite;
+}
+
+@keyframes colorPulse {
+  0% { color: red; }
+  25% { color: orange; }
+  50% { color: green; }
+  75% { color: blue; }
+  100% { color: violet; }
+}
+
+
+.profile-pic {
+  display: block;
+  height:200px;
+  width: 200px;
+  border-radius: 50%;
+  margin-top: 50px;
+  margin-left: 40px;
+  object-fit: cover;
+}
+
+.project-card {
+  background: linear-gradient(to right, lime, blue);
+  color: palevioletred;
+  padding: 50px;
+  margin-bottom: 50px;
+  border-radius: 50px;
+  color: white;
+}
+.slide-in {
+  transform: translateX(-100%);
+  opacity: 0;
+  animation: slideIn 1s forwards;
+}
+
+@keyframes slideIn {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+footer {
+  background-color: #2b2d42;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  height: 40px;
+  width: 100%;
+  bottom: 0;
+}
